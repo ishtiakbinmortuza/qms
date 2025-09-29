@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qamarshan Citizenship Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Qamarshan</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="apply.html" class="active">Apply</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="form-container">
+  <h1>Citizenship Application</h1>
+  <p>Please complete the form below to apply for Qamarshan citizenship.</p>
+
+  <form action="submit_application.php" method="POST">
+    <!-- Personal Info -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <!-- Address -->
+    <label for="address">Residential Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <!-- Motivation -->
+    <label for="reason">Why do you want to become a citizen?</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+
+    <!-- Citizenship Type -->
+    <label for="type">Application Type:</label>
+    <select id="type" name="type" required>
+      <option value="">-- Select Type --</option>
+      <option value="permanent">Permanent Citizenship</option>
+      <option value="honorary">Honorary Citizenship</option>
+      <option value="dual">Dual Citizenship</option>
+    </select>
+
+    <!-- Submit -->
+    <button type="submit">Submit Application</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2025 Qamarshan. All rights reserved.</p>
+</footer>
+</body>
+</html>
